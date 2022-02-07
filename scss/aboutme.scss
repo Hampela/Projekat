@@ -1,0 +1,47 @@
+@import 'variables';
+@import 'meni';
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    animation: Animacija ease 5s;
+}
+@keyframes Animacija {
+    0% {
+        filter: brightness(0.3);
+    }
+    100% {
+        filter: brightness(1);
+    }
+}
+.tekst
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+    p{
+        border: 100px solid transparent;
+        padding: 30px;
+        border-image: url("../Slike/border.png") 30% round;
+        line-height: 25px;
+        animation-delay: 1s;
+        width: 620px;
+    }
+}
+@media only screen and (max-width: 600px) {
+.tekst
+{
+    p {
+        border: 0px;
+        border-image: none;
+    }
+    .glavni
+    {
+        height: auto;
+    }
+}
+}

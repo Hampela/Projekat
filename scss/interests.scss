@@ -1,0 +1,57 @@
+@import 'variables';
+@import 'meni';
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    animation: Animacija ease 5s;
+}
+@keyframes Animacija {
+    0% {
+        filter: brightness(0.3);
+    }
+    100% {
+        filter: brightness(1);
+    }
+}
+.opis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  text-align: center;
+  p {
+    border: 100px solid transparent;
+    padding: 30px;
+    border-image: url("../Slike/border.png") 30% round;
+    line-height: 25px;
+    align-items: center;
+    vertical-align: middle;
+    animation-delay: 1s;
+  }
+  b{
+    color: deepskyblue;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  img{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .opis
+  {
+    p{
+      border: 0px;
+      border-image: none;
+    }
+  }
+}
